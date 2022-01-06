@@ -1,0 +1,14 @@
+@PACKAGE_INIT@
+
+set(waylandgui_INCLUDE_DIR "${PACKAGE_PREFIX_DIR}/@CMAKE_INSTALL_INCLUDEDIR@")
+set(waylandgui_VERSION_TYPE "@ENOKI_VERSION_TYPE@")
+set(waylandgui_LIBRARY "")
+
+check_required_components(waylandgui)
+
+include("${CMAKE_CURRENT_LIST_DIR}/waylandguiTargets.cmake")
+
+if(NOT waylandgui_FIND_QUIETLY)
+  message(STATUS "Found waylandgui: ${waylandgui_INCLUDE_DIR} (found version \"${waylandgui_VERSION}\" ${waylandgui_VERSION_TYPE})")
+endif()
+
