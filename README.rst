@@ -137,9 +137,9 @@ available. (If you are not **root** then you know you need sudo in front of most
    apt-get update
    apt-get install build-essential dkms linux-headers-$(uname -r)
    apt-get upgrade
-   apt-get install cmake unzip zip git patchelf pkg-config extra-cmake-modules
-   apt-get install libwayland-dev libxkbcommon-dev wayland-protocols 
-   apt-get install waylandpp-dev libvulkan-dev
+   apt-get install cmake ninja-build unzip zip git patchelf pkg-config extra-cmake-modules
+   apt-get install libgles-dev libwayland-dev libxkbcommon-dev wayland-protocols
+   apt-get install waylandpp-dev libvulkan-dev libglfw3-wayland
 
    mkdir Projects
    cd Projects
